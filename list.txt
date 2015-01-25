@@ -3,3 +3,4 @@
 345,chocolate,2.99
 456,gummy bear,1.99
 567,sandwich,3.59
+000,no item,0.00
