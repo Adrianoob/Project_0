@@ -2,6 +2,8 @@ public class Jtest {
     public static void main(String [] args) {
         Scanning sc = new Scanning();
         sc.loadInformation();
-        System.out.println(sc.toString());
+        Item item = sc.scan("123");
+        System.out.println(item.toString());
+        //System.out.println(sc.toString());
     }
 }
