@@ -6,9 +6,9 @@ public class Item
 
 	public Item()
 	{
-		barcode = " ";   
-		item = " ";
-		price = 0;
+		barcode = "000";   
+		item = "no item";
+		price = 0.00;
 	}
 
 	public Item(String bc, String it, double p)
