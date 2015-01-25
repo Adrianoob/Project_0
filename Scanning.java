@@ -6,7 +6,7 @@ public class Scanning{
     }
     
     public void loadInformation() {
-        
+        //
     }
     
     public String scan(String barcode) {
