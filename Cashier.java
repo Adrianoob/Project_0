@@ -2,7 +2,7 @@ import java.util.*;
 
 public class Cashier
 {
-	Scanning sc = null;
+	Scanning sc = new Scanning();
 	ArrayList<Item> itemList = new ArrayList<Item>();
 	double sum = 0;
 	double tax = 0;
