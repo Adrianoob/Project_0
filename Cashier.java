@@ -7,18 +7,26 @@ public class Cashier
 	double sum = 0;
 	double tax = 0;
 
-	public void addItem(String barcode)
+	public Cashier()
 	{
 		sc.loadInformation();
+	}
+
+	public void addItem(String barcode)
+	{
 		Item i = sc.scan(barcode);
 		itemList.add(i);
 	}
 
 	public void deleteItem(String barcode)
 	{
-		sc.loadInformation();
 		Item i = sc.scan(barcode);
-		itemList.remove(i);
+		for(int j = 0; j<itemList.size(); j++)
+		{
+			if(itemList.get(j).getBarcode().equals(barcode)){
+				itemList.remove(j);
+			}
+		}
 	}
 
 	public double sum()

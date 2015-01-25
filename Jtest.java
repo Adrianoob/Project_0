@@ -3,8 +3,10 @@ public class Jtest {
         Cashier c = new Cashier();
   		c.addItem("123");
   		c.addItem("234");
+  		c.addItem("123");
+  		c.deleteItem("123");
   		c.sum();
   		c.tax();
-  		c.print();
+  		System.out.println(c.print());
     }
 }
