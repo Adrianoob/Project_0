@@ -50,5 +50,10 @@ public class Item
 		price = p;
 	}
 
+	//to String
+	public String toString()
+	{
+		return "barcode: "+barcode+ " item: "+item+ " price: "+price; 
+	}
 
 }
