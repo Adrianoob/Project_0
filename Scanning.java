@@ -45,7 +45,8 @@ public class Scanning{
     public String toString() {
         String res = "";
         for (int i = 0; i < item.length; i++) {
-            res = res + item[i];
+            res = res + item[i]+"\n";
         }
+        return res;
     }
 }
