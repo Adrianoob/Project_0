@@ -2,18 +2,28 @@ import java.util.*;
 
 public class Cashier
 {
-	Scanning sc = new Scanning();
+	Scanning sc = null;
 	ArrayList<Item> itemList = new ArrayList<Item>();
 	double sum = 0;
 	double tax = 0;
+    
+    public Cashier (){
+        sc = new Scanning();
+        sc.loadInformation();
+        sum=0;
+        tax=0;
+    }
 
 	public Cashier()
 	{
+<<<<<<< HEAD
 		sc.loadInformation();
 	}
 
 	public void addItem(String barcode)
 	{
+=======
+>>>>>>> 22344100ba65da54deb13004f2b880be73546de6
 		Item i = sc.scan(barcode);
 		itemList.add(i);
 	}

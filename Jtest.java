@@ -9,6 +9,9 @@ public class Jtest {
   		c.addItem("456");
   		c.sum();
   		c.tax();
+<<<<<<< HEAD
   		System.out.println(c.print());
+=======
+>>>>>>> 22344100ba65da54deb13004f2b880be73546de6
     }
 }
