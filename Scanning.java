@@ -36,10 +36,17 @@ public class Scanning{
         }
     }
     
-    public String scan(String barcode) {
-        
-        //the return type need to be changed to be Item.
-        return "something";
+    public Item scan(String barcode) {
+        Item it = new Item();
+        for (int i = 0; i < item.length; i++) {
+            if (item[i].barcode.equals(barcode)) {
+                it.setBarcode(item[i].getBarcode());
+                it.setItem(item[i].getItem());
+                it.setPrice(item[i].getPrice());
+                break;
+            }
+        }
+        return it;
     }
     
     public String toString() {
