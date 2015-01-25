@@ -45,9 +45,14 @@ public class Cashier
 	}
 
 	public String print()
-	{
+	{	
+		String receipt = "\n";
+		for(int i = 0; i<itemList.size(); i++)
+		{
+			receipt = receipt+itemList.get(i).toString()+"\n";
+		}
 		double check = sum + tax;
-		return "Total: "+sum+ " Tax: "+tax+" Total after tax: "+ check;
+		return receipt+"Total: "+sum+ " Tax: "+tax+" Total after tax: "+ check;
 	}
 
 }
