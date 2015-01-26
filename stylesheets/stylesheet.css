@@ -53,40 +53,43 @@ body {
   color:#373737;
   background: #212121;
   font-size: 16px;
-  font-family: 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
+  font-family: Consolas, Calibri, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
 
 h1, h2, h3, h4, h5, h6 {
   margin: 10px 0;
-  font-weight: 700;
   color:#222222;
-  font-family: 'Lucida Grande', 'Calibri', Helvetica, Arial, sans-serif;
-  letter-spacing: -1px;
+  font-family: Charter, 'Calibri', Helvetica, Arial, sans-serif;
 }
 
 h1 {
-  font-size: 36px;
+  font-size: 60px;
   font-weight: 700;
 }
 
 h2 {
+  font-weight:bold;
   padding-bottom: 10px;
-  font-size: 32px;
+  font-size: 48px;
   background: url('../images/bg_hr.png') repeat-x bottom;
+  
 }
 
 h3 {
-  font-size: 24px;
+  font-size: 36px;
+  font-style: italic;
+  font-weight: bold;
 }
 
 h4 {
-  font-size: 21px;
+  font-size: 28px;
+  font-style: italic;
 }
 
 h5 {
-  font-size: 18px;
+  font-size: 20px;
 }
 
 h6 {
@@ -368,6 +371,10 @@ Full-Width Styles
   background: #212121;
 }
 
+#tab {
+    text-indent: 30px;
+}
+
 
 
 /*******************************************************************************
@@ -382,7 +389,7 @@ Small Device Styles
   #downloads {
     display: none;
   }
-
+  
   .inner {
     min-width: 320px;
     max-width: 480px;
